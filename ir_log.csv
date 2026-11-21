@@ -1,0 +1,7 @@
+﻿frame_id,source,phenomenon,affected_field,effect_on_label
+S01_ir,IR_sim,"Vùng ghế phải theo xe cùng tọa độ sáng trung bình 46,7/255 trên IR-sim so với 17,7/255 trên RGB. Chênh lệch kênh màu trung bình giảm từ 11,2 xuống 0.",infant_seat / child_seat,"Với v2, vùng ghế phải theo xe là nôi xách. Đối chiếu riêng vỏ và quai của nôi khi mất tín hiệu màu."
+S02_ir,IR_sim,"Trong vùng ghế phải theo xe, độ lệch chuẩn độ sáng tăng từ 21,9 trên RGB lên 32,0 trên IR-sim. IR-sim chỉ còn sắc độ xám.",infant_seat.facing,"Sau review, vỏ có quai được gán infant_seat với facing=front. Độ tương phản chỉ hỗ trợ thấy cấu trúc."
+S05_ir,IR_sim,"Vùng phía phải ảnh tại x=690–750 và y=255–305 sáng trung bình 104,4/255 trên IR-sim so với 7,8/255 trên RGB cùng cảnh.",person / child_seat,Hai ảnh trong bản v2 đều có child_seat ở hai ghế ngoài. Độ sáng chỉ hỗ trợ nhìn đường viền.
+S06_ir,IR_sim,"Vùng vật ở ghế giữa sáng trung bình 98,4/255 trên IR-sim so với 3,7/255 trên RGB. Chênh lệch giữa các kênh màu trên IR-sim bằng 0.",object.type,"Theo góp ý review, hình quai và túi trước trên IR-sim hỗ trợ chọn bag. RGB tối nên vẫn để other."
+D02,real_IR,"Trong khung NIR xoay, khoảng hai khóe theo điểm nháp ở mắt phải khoảng 28 px, nhỏ hơn khoảng 49 px ở mắt trái.",face.eye_right,Giữ unknown cho mắt phía xa vì điểm nháp chưa xác nhận được khe mí. Rà lại cờ che khuất.
+D06,real_IR,Các lượt dò ảnh NIR cho kết luận khác nhau về độ mở của cả hai mắt.,face.eye_left / face.eye_right,"Sau khi hai bản review cùng nhận xét thấy hai mí khép, chọn closed cho cả hai mắt trên khung này."
